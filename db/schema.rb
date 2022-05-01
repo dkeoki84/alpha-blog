@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_30_205818) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.text "desciption"
+    t.text "description"
   end
 
 end
