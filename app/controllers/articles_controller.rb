@@ -32,8 +32,16 @@ class ArticlesController < ApplicationController
       flash[:notice] = "Article was updated successfully."
       redirect_to @article
     else
+      # turbo - reduce page reloads
       render :edit, status: 422
     end
+  end
+
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+    # turbo - reduce page reloads
+    redirect_to articles_path, status: 422
   end
 
 end
