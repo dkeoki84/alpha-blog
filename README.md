@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* Adding bootstrap to rails7 
+  https://jasonfleetwoodboldt.com/courses/stepping-up-rails/rails-7-bootstrap/
